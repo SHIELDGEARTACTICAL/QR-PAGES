@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shield Tactical Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --dark-green: #0D2926;
+            --golden: #B7950B;
+            --light-gray: #F8F8F8;
+            --white: #FFFFFF;
+        }
+        
+        body {
+            background-color: var(--dark-green);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--white);
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            overflow: hidden;
+            border: none;
+            background-color: var(--dark-green);
+            color: var(--white);
+        }
+        
+        .profile-img {
+            width: 300px;
+            height: 120px;
+            object-fit: cover;
+            margin: -60px auto 20px;
+            display: block;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .btn-option {
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--golden);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--golden);
+            color: var(--dark-green) !important;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .btn-option:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            background-color: var(--dark-green) !important;
+            color: var(--golden) !important;
+        }
+        
+        .btn-option i {
+            margin-right: 10px;
+            font-size: 1.3rem;
+            color: var(--dark-green);
+        }
+        
+        .company-name {
+            color: var(--white);
+            font-weight: 700;
+            margin-bottom: 5px;
+            font-size: 1.5rem;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+        
+        .tagline {
+            color: var(--light-gray);
+            font-style: italic;
+            margin-bottom: 25px;
+            font-weight: 500;
+        }
+        
+        .header-gradient {
+            background: linear-gradient(45deg, var(--dark-green), var(--dark-green));
+            color: var(--dark-green);
+            padding: 15px;
+            border-radius: 15px 15px 0 0;
+            margin: -2px -2px 0 -2px;
+            text-align: center;
+        }
+        
+        .footer {
+            background-color: var(--dark-green);
+            color: var(--white);
+            padding: 15px;
+            border-radius: 0 0 13px 13px;
+            margin: 0 -2px -2px -2px;
+            text-align: center;
+        }
+        
+        .footer small {
+            opacity: 0.9;
+        }
+        
+        .qr-note {
+            background-color: rgba(183, 149, 11, 0.1);
+            border-left: 4px solid var(--golden);
+            padding: 10px 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8 col-lg-6">
+                <div class="card">
+                    <!-- Header with gradient -->
+                    <div class="header-gradient">
+                        <h3 class="mb-0">Connect With Us</h3>
+                    </div>
+                    
+                    <!-- Profile Image -->
+                    <img src="logo3.png" alt="Company Logo" class="profile-img">
+                    
+                    <!-- Card Body -->
+                    <div class="card-body text-center">
+                        <!-- Business Info -->
+                        <h2 class="company-name">Shield Tactical</h2>
+                        <p class="tagline">Your trusted partner in tactical solutions</p>
+                        
+                                               
+                        <!-- Contact Options -->
+                        <div class="mt-3">
+                            <!-- WhatsApp Button -->
+                            <a href="https://wa.me/+971542524562" class="btn btn-option w-100" id="whatsappBtn">
+                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
+                            
+                            <!-- Instagram Button -->
+                            <a href="https://instagram.com/shield_tacticalgears" class="btn btn-option w-100" id="instagramBtn">
+                                <i class="fab fa-instagram"></i> Follow on Instagram
+                            </a>
+                            
+                            <!-- Website Button -->
+                            <a href="https://www.shield-gears.com" class="btn btn-option w-100" id="websiteBtn">
+                                <i class="fas fa-globe"></i> Visit Our Website
+                            </a>
+                            
+                            <!-- Google Maps Button -->
+                            <a href="https://maps.app.goo.gl/6ZGWUC6hCJGM4Lxa8" class="btn btn-option w-100" id="mapsBtn">
+                                <i class="fas fa-map-marker-alt"></i> Find Us on Maps
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Footer -->
+                    <div class="footer">
+                        <p class="mb-1">Contact us today!</p>
+                        <small>Shield Tactical © 2023</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Configuration object - easy to edit links
+        const config = {
+            whatsapp: "https://wa.me/+971542524562",
+            instagram: "https://instagram.com/shield_tacticalgears",
+            website: "https://www.shield-gears.com",
+            maps: "https://maps.app.goo.gl/6ZGWUC6hCJGM4Lxa8"
+        };
+        
+        // Update links when the page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('whatsappBtn').href = config.whatsapp;
+            document.getElementById('instagramBtn').href = config.instagram;
+            document.getElementById('websiteBtn').href = config.website;
+            document.getElementById('mapsBtn').href = config.maps;
+            
+            // You can add analytics or tracking here if needed
+            console.log('Contact page loaded with Shield Tactical theme');
+        });
+        
+        // To update links in the future, simply edit the config object above
+        // For example, to change the WhatsApp number:
+        // config.whatsapp = "https://wa.me/NEWNUMBER";
+    </script>
+</body>
+</html>
