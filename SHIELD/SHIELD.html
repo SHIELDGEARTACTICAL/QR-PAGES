@@ -13,10 +13,30 @@
             --golden: #B7950B;
             --light-gray: #F8F8F8;
             --white: #FFFFFF;
+            --Black:	#000000;	
+            --white:	#FFFFFF;	
+            --Red:	#FF0000;	
+            --Green:	#008000;	
+            --Blue:	#0000FF;	
+            --Yellow:	#FFFF00;	
+            --Cyan: (Aqua)	#00FFFF;	
+            --Magenta: (Fuchsia)	#FF00FF;	
+            --Gray:	#808080;	
+            --LightGray:	#D3D3D3;	
+            --DarkGray:	#A9A9A9;	
+            --Orange:	#FFA500;	
+            --Purple:	#800080;	
+            --Pink:	#FFC0CB;	
+            --Brown:	#A52A2A;	
+            --Gold:	#FFD700;	
+            --Navy:	#000080;
+            --Olive:	#808000;	
+            --Teal:	#008080;	
+            --Maroon:	#800000;
         }
         
         body {
-            background-color: var(--dark-green);
+            background-color: var(--Black);
             min-height: 100vh;
             display: flex;
             align-items: center;
@@ -26,7 +46,7 @@
         
         .card {
             border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            box-shadow: 0 20px 30px rgba(0,0,0,0.2);
             overflow: hidden;
             border: none;
             background-color: var(--dark-green);
@@ -43,26 +63,28 @@
         }
         
         .btn-option {
-            padding: 15px;
-            margin: 10px 0;
-            border-radius: 12px;
+            padding: 12px;
+            margin: 10px auto;
+            width: 350px !important;
+            border-radius: 20px;
             font-weight: 600;
             font-size: 1.1rem;
-            transition: all 0.3s ease;
-            border: 2px solid var(--golden);
+            transition: all 0.1s ease;
+            border: 0.5px solid var(--golden);
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: var(--golden);
+            background-image: linear-gradient(to right, #976121, #f3b06a, #976121);
             color: var(--dark-green) !important;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+            
         }
         
         .btn-option:hover {
             transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.15);
             background-color: var(--dark-green) !important;
-            color: var(--golden) !important;
+            color: var(--white) !important;
         }
         
         .btn-option i {
@@ -166,7 +188,7 @@
                     <!-- Footer -->
                     <div class="footer">
                         <p class="mb-1">Contact us today!</p>
-                        <small>Shield Gear Tactical © 2023</small>
+                        <small>Shield Tactical © 2023</small>
                     </div>
                 </div>
             </div>
